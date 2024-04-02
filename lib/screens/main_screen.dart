@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:student_attendence_system/widgets/side_menu_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -13,7 +14,9 @@ class MainScreen extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: Container(color: Colors.red),
+              child: SizedBox(
+                child: SideMenuWidget(),
+              ),
             ),
             Expanded(
               flex: 7,
